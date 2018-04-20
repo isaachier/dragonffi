@@ -14,10 +14,6 @@ case $ARCH in
     ;;
 esac
 
-cat /proc/sys/fs/binfmt_misc/status
-ls -la /proc/sys/fs/binfmt_misc/
-id
-
 sudo $DIR/qemu-binfmt-conf.sh --qemu-path /usr/bin
 
 # Get LLVM
