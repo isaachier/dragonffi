@@ -18,10 +18,12 @@ cat /proc/sys/fs/binfmt_misc/status
 ls -la /proc/sys/fs/binfmt_misc/
 id
 
-sudo $DIR/qemu-binfmt-conf.sh
+sudo $DIR/qemu-binfmt-conf.sh --qemu-path /usr/bin
 
 # Get LLVM
 get_llvm lnx$ARCH $LLVM_HASH
+
+/opt/pwd/llvm-5.0.1.dffi/bin/llvm-config
 
 # Build multiarch docker
 sudo apt-get update
