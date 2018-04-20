@@ -23,8 +23,6 @@ sudo $DIR/qemu-binfmt-conf.sh --qemu-path /usr/bin
 # Get LLVM
 get_llvm lnx$ARCH $LLVM_HASH
 
-/opt/pwd/llvm-5.0.1.dffi/bin/llvm-config
-
 # Build multiarch docker
 sudo apt-get update
 sudo apt-get -y -o Dpkg::Options::="--force-confnew" install docker-ce
