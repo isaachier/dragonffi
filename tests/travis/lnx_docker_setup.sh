@@ -15,6 +15,10 @@ case $ARCH in
 esac
 
 cat /proc/sys/fs/binfmt_misc/status
+ls -la /proc/sys/fs/binfmt_misc/
+id
+
+sudo $DIR/qemu-binfmt-conf.sh
 
 # Get LLVM
 get_llvm lnx$ARCH $LLVM_HASH
